@@ -1,0 +1,518 @@
+:root{
+--alice-blue: hsla(216, 100%, 97%, 1);
+--night: hsla(240, 3%, 8%, 1);
+--alice-blue-2: hsla(215, 67%, 96%, 1);
+--seasalt: hsla(0, 0%, 98%, 1);
+--french-gray: hsla(206, 14%, 80%, 1);
+--yinmn-blue: #33516Eff;
+--paynes-gray: #5D7285ff;
+--slate-gray: #6B7280ff;
+--celestial-blue: #01A2F9ff;
+--prussian-blue: #1F384Cff;
+
+}
+*{
+  margin: 0;
+  padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+    background:var(--alice-blue);
+}
+header{
+     height: 6vh;
+     width: 100%;
+    display: flex;
+    color : #000000;
+    background: #ffffff;
+    justify-content:space-around; 
+    box-shadow: 1px 0px 10px #000000;
+    z-index: 20;
+    position: sticky;
+}
+header img{
+    border: 0cm;
+    border-radius: 50%;
+    width: 3%;
+    height: 80%;
+    margin: .3em;   
+ }
+.space{
+    width: 50%;
+}
+header font{
+    color: var(--yinmn-blue);
+    padding: 1%;
+    font-weight: 700;
+    font-size: x-large;
+    
+ }
+ header b{
+    align-self: center;
+ }
+header .search-container{
+    border: #ababab 2px solid;
+    margin: 0.5em;
+    border-radius: 5px;
+    width : 20%;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    padding: .1em;
+}
+.search-container input{
+    margin: .3em;
+}
+.search-container i{
+    margin: .3em;
+}
+header .search-container:hover{
+     border: #000000 2px solid;
+     box-shadow: #000000 1px;
+}
+header input{
+     justify-self: center;
+ border: none;
+  outline: none; 
+    box-shadow: none; 
+
+ }
+
+header .profiler{
+align-self: center;
+    
+     width : 7%;
+} 
+.fa-regular{
+    font-size: 1.7rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    align-self: center;
+  }
+header p{
+        display: flex;
+    flex-direction: column;
+    justify-items: center;
+   text-align: right;     
+} 
+header small{
+        font-size: 75%;
+        color: #b8c7df;
+} 
+aside{
+    display: flex;
+    height: 94vh;
+    width: 20%;
+    background-color: white;
+    color: var(--paynes-gray);
+}
+aside ul{
+    list-style-type: none;
+    width: 100%;
+    
+     
+
+}
+aside ul img{
+
+      width: 10%;
+         margin: 5%;
+    padding: 5%;
+}
+aside ul article{
+
+      width: 70%;
+         margin: 5%;
+    padding: 5%;
+}
+aside ul li{
+       display: flex;
+       flex-direction: row;
+    width: 90%;
+    height: 5vh;
+    margin: 1%;
+    padding: 1%;
+    align-items: center;
+}
+.box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row ;
+}
+ .maingrid{
+width: 100%;
+height: 100%;
+  box-sizing: border-box;
+  padding: 0.5em;
+}
+ 
+.wrapper {
+
+  height: 90vh;
+}
+
+.wrapper > div {
+  border-radius: 20px;
+  padding: 0.5em;
+  margin-top:0.5em ;
+  margin-left: 0.5em;
+  margin-right:0.5em ;
+  
+  color: #d9480f;
+  background: white;
+  box-shadow: 0px 1px 10px rgb(193, 188, 188);
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+
+  gap: 10px;
+}
+.box1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+          justify-content: center; /* Centers items vertically */
+}
+.box2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.box3 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.savebu{
+  border-radius: 4px;
+  border:none;
+  width:6rem;
+  height: 5vh;
+   background-color: var(--celestial-blue);
+   color: white;
+  padding: 1em;
+  
+   
+}
+
+.box4 {
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start:1;
+  grid-row-end: 3;
+  position: relative;
+}
+.box5 {
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start:3;
+  grid-row-end: 7;
+  position: relative;
+}
+.profpic{
+     width: 50%;
+     height: 50;
+     border: 2px #e75480 solid ;
+     border-radius: 50%;
+     
+}
+.box1 section{
+
+    width: 100%;
+     height: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+      align-self: center;
+      justify-content: center; /* Centers this specific item (the flex container) vertically */
+
+    
+}
+.box1 section p{
+  width: 50%;
+      font-size: 0.7rem;
+
+  text-align: center;
+      color: rgb(87, 86, 86);
+
+}
+.box1  section img{
+   width: 1.4em;
+   height: 1.4em;
+   margin: 0.2em;
+  
+
+}
+.box2 b{
+  color: #000000;
+}
+
+
+.box2 div{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-content: center;
+   padding: 0.5em;
+
+}
+.box2 div p{
+   color: rgb(19, 148, 150);
+   background: lightblue;
+   align-self: center;
+   width: 35%;
+   font-size: small;
+   height: 3vh;
+   border-radius: 3px;
+   text-align: center;
+
+   
+}
+.bar{
+  align-self: center;
+    }
+.outer{
+  position: relative;
+  height: 107px;
+  width: 110px;
+  border-radius:50% ;
+    background: conic-gradient(
+       var(--celestial-blue) 0deg 120deg,
+       var(--slate-gray) 120deg 0deg
+    );
+   
+}
+.inner{
+   position: relative;
+    height: 90px;
+  width: 100px;
+  border-radius:50% ;
+  border: white;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+
+}
+.tex{
+   font-size: x-large;
+   font-weight: 600;
+   color: var(--prussian-blue);
+   text-align: center;
+}
+.texte{
+   margin: 0.5em;
+   margin-left: 4em;
+     align-self: start;
+       font-size: x-large;
+   font-weight: 600;
+   color: var(--prussian-blue);
+}
+.inputtab{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #ababab;
+  border-radius: 4px ;
+}
+.inputtab input{
+  margin: 2px;
+  border: none;
+  outline: none; 
+    box-shadow: none; 
+}
+.inputtab label{
+  margin: 2px;
+   color: #ababab;
+   font-size: smaller;
+   font-weight: bold;
+   
+}
+form{
+  display: flex;
+  flex-direction: row;
+  
+}
+form > div{
+   
+   height: 45vh;
+   padding: 1em;
+   padding-left: 0.5;
+   
+}
+form > div > div{
+  padding: 0.5em;
+  margin: 1.0em;
+  margin-left: 0.1em;
+  width: 100%;
+  }
+
+.inputtab input:focus{
+  border: none;
+  outline: none; 
+    box-shadow: none; 
+}
+.inputtab select{
+  border: none;
+  outline: none; 
+    box-shadow: none; 
+}
+.inputtab select:focus{
+  border: none;
+  outline: none; 
+    box-shadow: none; 
+      margin: 2px; 
+     
+}
+.op{
+  font-size: small;
+  color: #ababab;
+}
+.phone{
+   display: flex;
+   flex-direction: row;
+   width: 10em;
+   
+}
+.phone .inputtab{
+   width: 6.5em;
+   
+   
+}
+.box4{
+   display: flex;
+   flex-direction: column; 
+  }
+  .box4 > div{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    
+  }
+   .box4 > div > div > img {
+    width: 4.5em;
+    height: 3.5em;
+    margin: 0.5em;
+     border-radius:10px ;
+     
+
+   }
+   .projecthed{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+   }
+   .projecthed >div{
+     width: 40%;
+     margin: 0.5em;
+   } 
+   .box4 > div > div > p{
+     color: #ababab;
+     font-size: small;
+       margin-left: 0.5em;
+       margin-right: 0.5em;
+      
+   }
+.box5 {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  height: 75%;
+  margin: auto;
+  font-family: sans-serif;
+  justify-content: space-around;
+}
+
+.breadcrumb {
+  color: #555;
+  font-size: 0.9em;
+  margin: 0.1em;
+  padding: 0.1em;
+}
+
+.role {
+  font-weight: bold;
+  color: #111;
+  margin: 0.5em;
+}
+
+.desc {
+  color: #777;
+  font-size: 0.7em;
+  border-radius: 4px;
+  background-color:azure;
+  text-align: center;
+
+
+}
+
+.work-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+
+}
+
+.work-header .title {
+  font-weight: bold;
+  color: #000;
+}
+
+.work-header .viewall {
+  color: #e75480;
+  cursor: pointer;
+  font-size: small;
+  
+}
+
+.work-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.work-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 5em;
+}
+
+.work-item img {
+  width: 5em;
+  height: 4em;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.work-item p {
+  color: #ababab;
+  font-size: 0.7em;
+  margin-top: 0.3em;
+  text-align: center;
+}
+
