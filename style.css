@@ -26,7 +26,7 @@ body{
 }
 header{
      height: 7vh;
-     width: 100%;
+     min-width: 100% ;
     display: flex;
     color : #000000;
     background: #ffffff;
@@ -140,6 +140,7 @@ aside ul li{
     margin: 1%;
     padding: 1%;
     align-items: center;
+    font-size: 1rem;
 }
 .box{
     position: relative;
@@ -169,7 +170,7 @@ height: 100%;
   
   color: #d9480f;
   background: white;
-  box-shadow: 0px 1px 10px rgb(193, 188, 188);
+  box-shadow: 0px 6px 6px rgb(133, 130, 130);
 }
 .wrapper {
   display: grid;
@@ -199,7 +200,9 @@ height: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
-min-width: min-content;
+  
+  min-width: 10em;
+  
 }
 .box3 {
   grid-column-start: 2;
@@ -209,7 +212,7 @@ min-width: min-content;
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   min-width: min-content;
 }
 .savebu{
@@ -220,6 +223,8 @@ min-width: min-content;
   background-color: var(--celestial-blue);
   color: white;
   padding: 1em;
+  margin: 0.5em;
+  margin-left: 40%;
   
    
 }
@@ -247,7 +252,7 @@ min-width: min-content;
 }
 .box1 section{
 
-    width: 100%;
+    min-width: 100%;
      height: 5vh;
     display: flex;
     flex-direction: row;
@@ -260,18 +265,27 @@ min-width: min-content;
     
 }
 .box1 section p{
-  width: 50%;
+  width: 10em;
   font-size: 0.8rem;
   text-align: center;
       color: rgb(87, 86, 86);
       margin: 0.5em;
 
 }
-.box1  section img{
+.box1  section div img{
    width: 1.4em;
    height:  1.4em;
    margin: 0.2em;
+   align-items: center;
 }
+.box1  section div{
+     
+     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+}
+
 .box2 b{
   color: #000000;
 }
@@ -281,8 +295,8 @@ min-width: min-content;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
-   align-content: center;
-   justify-items: center;
+   align-content: left;
+   justify-items: left;
    padding: 0.5em;
 
 }
@@ -292,10 +306,10 @@ min-width: min-content;
    align-self: center;
    width: 35%;
    font-size: small;
-   height: 3vh;
+   height: auto;
    border-radius: 3px;
    text-align: center;
-   padding-top: px;   
+   padding: 5px;   
 }
 .bar{
   align-self: center;
@@ -330,15 +344,23 @@ min-width: min-content;
 }
 .texte{
    margin: 0.5em;
-   margin-left: 4em;
-     align-self: start;
-       font-size: x-large;
+   
+   font-size: x-large;
    font-weight: 600;
    color: var(--prussian-blue);
 }
+::-webkit-input-placeholder {
+  color: #999;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
 .inputtab{
   display: flex;
   flex-direction: column;
+  align-items: left;
+  max-width: 100%;
+  height: min-content;
   border: 2px solid #ababab;
   border-radius: 4px ;
 }
@@ -364,7 +386,7 @@ form > div{
    
    height: 45vh;
    padding: 1em;
-   padding-left: 0.5;
+   width: 40%;
    
 }
 form > div > div{
@@ -398,32 +420,59 @@ form > div > div{
 .phone{
    display: flex;
    flex-direction: row;
-   width: 10em;
+   width: 100%;
    
+    height: 8vh;
+    padding: 0;
 }
 .phone .inputtab{
    width: 6.5em;
+   height: 8vh;
    
+
    
 }
-.box4{
-   display: flex;
-   flex-direction: column; 
-  }
-  .box4 > div{
-    display: flex;
-    flex-direction: row; 
-    flex-wrap: wrap;
-    
-  }
-   .box4 > div > div > img {
-    width: 4.5em;
-    height: 3.5em;
-    margin: 0.5em;
-     border-radius:10px ;
-     
+.box4 {
+  display: flex;
+  flex-direction: column;
+}
 
-   }
+.box4 > div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px;
+  padding: 0 10px;
+}
+
+.box4 > div:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 0.5em;
+}
+
+.box4 > div:nth-child(2) > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    border: 2px solid #000;
+    border-radius: 10px;
+  width: 5em;
+}
+
+.box4 img {
+  max-width: 3em;
+  border-radius: 10px;
+}
+
+.box4 p {
+  color: #ababab;
+  font-size: small;
+  text-align: center;
+}
+
    .projecthed{
     display: flex;
     flex-direction: row;
@@ -445,10 +494,12 @@ form > div > div{
   display: flex;
   flex-direction: column;
   gap: 1em;
-  height: 75%;
+  min-height: fit-content;
   margin: auto;
   font-family: sans-serif;
   justify-content: space-around;
+  min-width:  min-content;
+  max-height: min-content;
 }
 
 .breadcrumb {
@@ -509,16 +560,113 @@ form > div > div{
 }
 
 .work-item img {
-  width: 5em;
-  height: 4em;
-  border-radius: 10px;
-  object-fit: cover;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  object-fit: fill;
+  outline: #000 solid 2px;
 }
 
 .work-item p {
-  color: #ababab;
+
+    color: #ababab;
   font-size: 0.7em;
   margin-top: 0.3em;
   text-align: center;
 }
 
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 0.5em;
+    text-align: center;
+  }
+
+  header img {
+    width: 8%;
+  }
+
+  header .search-container {
+    width: 60%;
+  }
+
+  aside {
+    width: 30%;
+    font-size: 0.9em;
+  }
+
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    height: auto;
+  }
+
+  .box4, .box5 {
+    grid-column: span 2;
+  }
+}
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 0.5em;
+  }
+
+  header img {
+    width: 15%;
+  }
+
+  header .search-container {
+    width: 80%;
+    margin-top: 0.5em;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100%;
+    height: auto;
+    order: 1;
+    box-shadow: none;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: auto;
+  }
+
+  .box1, .box2, .box3, .box4, .box5 {
+    grid-column: 1 / -1;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .box1, .box3, .box5 {
+    align-items: center;
+    text-align: center;
+  }
+
+  .work-gallery {
+    justify-content: center;
+  }
+
+  .work-item img {
+    width: 4em;
+    height: 3em;
+  }
+
+  .box4 > div:nth-child(2) {
+    justify-content: center;
+  }
+
+  .box4 img {
+    max-width: 3.5em;
+  }
+}
