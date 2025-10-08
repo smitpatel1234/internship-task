@@ -196,5 +196,28 @@
      </div>
      </div>
 </div>
+
 </body>
+<script>
+  // Select all option elements inside all selects
+  const options = document.querySelectorAll('select option');
+  
+  options.forEach(option => {
+    option.style.fontSize = 'small';
+    option.style.padding = '5px 10px';  // Note: padding on options may not work in some browsers
+    option.style.color = '#ababab';
+  });
+  const selectElements = document.querySelectorAll('select');
+
+selectElements.forEach(select => {
+  select.style.fontSize = 'small';
+  select.style.color = '#ababab';
+
+  select.addEventListener('change', () => {
+    // Additional style changes on selection if necessary
+    select.style.color = '#ababab'; // ensure color remains consistent
+  });
+});
+
+</script>
 </html>
